@@ -64,9 +64,81 @@ create table COUNTRY (
     );
 ```
 
+# Select Statement:
+
+Used for: 
+
+* Retreiving Data from the Table.
+* This is a DML Statement
+* Select Statement: Query
+* Result of Select: Result Set/Table
+
+## Syntax:
+
+```sql
+select * from <tablename>
+```
+
+```sql
+select COLUMN1, COLUMN2, ... from TABLE1;
+```
+
+## Example:
+```
+select ID, NAME from COUNTRY;
+```
+
+Retrieve all columns:
+
+```sql
+select * from country;
+```
+
+### Predicates:
+- Search conditions
+- Used in the search condition for the WHERE clause
+
+WHERE Clause comparison objects:
+
+```
+=   Equal
+>   Greater than
+<   Less than
+>=  Greater than or equal
+<=  Less than or equal
+<>  Not equal
+```
+
+## Examples:
+
+```sql
+select * from COUNTRY where ID <5;
+```
+
+```sql
+select * from COUNTRY where CCODE = 'CA';
+```
+
+```sql
+
+```
+
+```sql
+
+```
+
+```sql
+
+```
+
+```sql
+
+```
+
 ```sql
 
 ```
 ```sql
 
 ```
+
