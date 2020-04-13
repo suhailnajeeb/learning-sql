@@ -119,26 +119,60 @@ select * from COUNTRY where ID <5;
 select * from COUNTRY where CCODE = 'CA';
 ```
 
-```sql
+# Count Function:
 
-```
+Built-in function that retrieves the number of rows matching the query criteria.
 
-```sql
+## Examples:
 
-```
-
-```sql
-
-```
+Number of rows in the table:
 
 ```sql
-
+select COUNT(*) from tablename;
 ```
+Rows in MEDALS table where the country is Canada
 
 ```sql
-
+select COUNT(*) from MEDALS
+    where COUNTRY = 'CANADA';
 ```
+
+# Distinct Function:
+
+Used to Remove duplicate values in a result set.
+
+## Syntax:
+
+Retrieve Unique values in a column:
 ```sql
-
+select DISTINCT columnname from tablename
 ```
+## Example:
+
+List of unique Countries that received GOLD medals.
+```sql
+select DISTINCT COUNTRY from MEDALS
+    where MEDALTYPE = 'GOLD';
+```
+
+# Limit:
+
+Restrict the number of rows retrieved from the database.
+
+## Syntax:
+
+Retrieve first 10 rows in a table:
+
+```sql
+select * from tablename LIMIT 10
+```
+## Example:
+
+Retrieve 5 rows in the MEDALS table for the year 2018
+```sql
+select * from MEDALS
+    where YEAR = 2018 limit 5
+```
+
+
 
